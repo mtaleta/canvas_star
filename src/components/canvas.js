@@ -7,13 +7,13 @@ function Canvas(cx,ctx){
   this.backgroundColor = 'rgba(0,0,0,0)';
   this.dotColor = '#FFFF4D';
   this.lineColor = '#CCCCFF';
-  this.dots = [];//點
-  this.lines = [];//線
+  this.dots = []; //點
+  this.lines = [];  //線
 }
 Canvas.prototype = {  
   construct:function(){
     var _this = this;
-    for( var i = 0; i < this.len; i++ ){
+    for( var i = 0; i < this.len; i++ ) {
         var dot = {          
           isMouse : i===0,
           x : Math.random()*this.cx.width,
